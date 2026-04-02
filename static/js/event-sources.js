@@ -10,6 +10,7 @@
  */
 // Site-specific event source data is loaded first.
 import { default as EventSourceData } from './event-source-data.js';
+import { useCorsProxy } from './utils.js';
 
 // Each event source module/scraper/transformer is loaded next, as we
 // will need access to their prototype object.
@@ -129,7 +130,12 @@ const EventSources = EventSourceData.flatMap(function (element, index, array) {
             case 'ics':
             case 'json':
                 // For these FullCalendar event source types, we don't
-                // use an `events` function at all.
+                // use an `events` function at all. But, we do still
+                // make sure that iCalendar and JSON feeds respect any
+                // CORS proxy setting in the event object even without
+                // a callback function to manage that in another way.
+                eventSourceObject.url = (eventSourceObject.useCorsProxy)
+                    ? useCorsProxy(eventSourceObject.url) : eventSourceObject.url;
                 break;
             case 'one-off':
                 eventSourceObject.events = source.events;
