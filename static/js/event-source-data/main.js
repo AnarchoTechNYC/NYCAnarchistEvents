@@ -477,6 +477,12 @@ const MainEventSourceData = [
                 url: 'https://www.eventbrite.com/o/wet-spot-33199977351'
             },
             {
+                name: 'Working Girls Press',
+                id: 'working-girls-press',
+                className: 'working-girls-press',
+                url: 'https://www.eventbrite.com/o/working-girls-press-80836762873'
+            },
+            {
                 name: 'Zara Franke/Lucy Gaehring',
                 id: 'zara-franke-lucy-gaehring',
                 className: 'zara-franke-lucy-gaehring',
@@ -643,6 +649,13 @@ const MainEventSourceData = [
                 id: 'livecode-nyc',
                 className: 'livecode-nyc',
                 url: 'https://livecode.nyc/calendar.ics',
+            },
+            {
+                name: 'Metropolitan Anarchist Coordinating Council of NYC',
+                id: 'maccnyc',
+                className: 'event-maccnyc',
+                url: 'https://www.maccny.org/wp-content/Plugins/AMS/Controls/AMSEvents/Calendar.ashx',
+                useCorsProxy: true
             },
             {
                 name: 'NYC Anarchist Bookfair',
@@ -1098,12 +1111,15 @@ const MainEventSourceData = [
                 className: 'the-tank',
                 url: 'https://thetanknyc.org/calendar-1/?format=json'
             },
-            {
-                name: 'Trans Pecos',
-                id: 'trans-pecos',
-                className: 'trans-pecos',
-                url: 'https://www.thetranspecos.com/cal?format=json'
-            },
+            // TODO: This venue seems to have switched to VenuePilot.co
+            //       for events. We need an event source connector for
+            //       that endpoint. (They use GraphQL.)
+            //{
+            //    name: 'Trans Pecos',
+            //    id: 'trans-pecos',
+            //    className: 'trans-pecos',
+            //    url: 'https://www.thetranspecos.com/cal?format=json'
+            //},
             {
                 name: 'Vers',
                 id: 'vers',
@@ -1155,12 +1171,6 @@ const MainEventSourceData = [
                 id: 'bushwick-daily',
                 className: 'bushwick-daily',
                 url: `https://tockify.com/api/ngevent?max=100&calname=bushwickdaily&start-inclusive=true&longForm=true&showAll=true`
-            },
-            {
-                name: 'Metropolitan Anarchist Coordinating Council of NYC',
-                id: 'maccnyc',
-                className: 'event-maccnyc',
-                url: `https://tockify.com/api/ngevent?max=100&calname=mlsupport&start-inclusive=true&longForm=true&showAll=true`
             },
             {
                 name: 'Thotyssey',

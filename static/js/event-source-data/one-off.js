@@ -89,11 +89,11 @@ const OneOffEventSources = [
                 id: 'elsewhere-brooklyn',
                 className: 'elsewhere-brooklyn',
                 events: async function (fetchInfo, successCallback, failureCallback) {
-                    var response = await fetch(Utils.useCorsProxy('https://www.elsewherebrooklyn.com/events'));
+                    var response = await fetch(Utils.useCorsProxy('https://www.elsewhere.club/events'));
                     var html = await response.text();
                     var doc = Utils.domparser.parseFromString(html, 'text/html');
                     var buildId = JSON.parse(doc.getElementById('__NEXT_DATA__').textContent).buildId;
-                    var response = await fetch(Utils.useCorsProxy(`https://www.elsewherebrooklyn.com/_next/data/${buildId}/events.json`));
+                    var response = await fetch(Utils.useCorsProxy(`https://www.elsewhere.club/_next/data/${buildId}/events.json`));
                     var json = await response.json();
                     successCallback(json.pageProps.initialEventData.events.map(function (item) {
                         return {
