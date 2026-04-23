@@ -308,6 +308,12 @@ const MainEventSourceData = [
                 url: 'https://www.eventbrite.com/o/im-baby-x-kaylita-40383327263'
             },
             {
+                name: 'SheMagick Events',
+                id: 'shemagick-events',
+                className: 'shemagick-events',
+                url: 'https://www.eventbrite.com/o/18676027428'
+            },
+            {
                 name: 'Soo Intoit and RoiiiBoiiii',
                 id: 'soo-intoit-and-roiii-boiiii',
                 className: 'soo-intoit-and-roiii-boiiii',
@@ -829,6 +835,16 @@ const MainEventSourceData = [
                 extraParams: {
                     gqlVariables: {
                         club: '128789'
+                    }
+                }
+            },
+            {
+                name: 'Kay Gabriel',
+                className: 'kay-gabriel',
+                id: 'kay-gabriel',
+                extraParams: {
+                    gqlVariables: {
+                        promoter: '136156'
                     }
                 }
             },
