@@ -605,6 +605,12 @@ const MainEventSourceData = [
                 url: 'https://calendar.google.com/calendar/ical/tvrptkil8r120s1guaefhp23hs%40group.calendar.google.com/public/basic.ics'
             },
             {
+                name: 'Nomad Café and Eatery',
+                id: 'nomad-cafe-and-eatery',
+                className: 'nomad-cafe-and-eatery',
+                url: 'https://calendar.google.com/calendar/ical/871b4f6f13e776e2270ee5154df1edf8aa1321e890fd9011a38c2b3b2e21c228%40group.calendar.google.com/public/basic.ics'
+            },
+            {
                 name: 'Polyphase Portal',
                 id: 'polyphase-portal',
                 className: 'polyphase-portal',
