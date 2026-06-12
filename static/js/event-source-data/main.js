@@ -795,6 +795,16 @@ const MainEventSourceData = [
                 }
             },
             {
+                name: 'Dirty Magazine',
+                className: 'dirty-magazine',
+                id: 'dirty-magazine',
+                extraParams: {
+                    gqlVariables: {
+                        promoter: '104455'
+                    }
+                }
+            },
+            {
                 name: 'Fractals',
                 className: 'fractals',
                 id: 'fractals',
