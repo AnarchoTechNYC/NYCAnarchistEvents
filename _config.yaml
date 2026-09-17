@@ -101,6 +101,12 @@ sister_sites:
         latitude: 37.7848
         longitude: -122.7283
     issue_tracker: https://github.com/ivyraine/bay.lgbt/issues
+  - title: Queer Kalender Netherlands
+    url: https://queer-kalender.nl/en/
+    adr:
+      locality: Amsterdam
+      region: North Holland
+      country_name: Netherlands
 
 #twitter:
 #  card: summary_large_image
